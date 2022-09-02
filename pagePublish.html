@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>GRAEGRAE</title>
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+  <script src="js/common.js"></script>
+</head>
+
+<body>
+	<section id="wrap">
+		<aside id="aside">
+			<h1>graegrae</h1>
+			<div class="boxNetSelect">
+				<div class="selected">Klaytn 메인넷</div>
+				<ul>
+					<li class="hide"><a href="#">Klaytn 메인넷</a></li>
+					<li><a href="#">Etherium 메인넷</a></li>
+					<li><a href="#">Klaytn 테스트넷</a></li>
+					<li><a href="#">Etherium 테스트넷</a></li>
+				</ul>
+			</div>
+			<ul id="gnb">
+				<li>
+					<a href="#">NFT 발행</a>
+					<ul>
+						<li class="active"><a href="#">NFT 캠페인 생성</a></li>
+						<li><a href="#">NFT 이벤트 설정</a></li>
+						<li><a href="#">NFT 발행</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">이벤트 사이트 만들기</a>
+				</li>
+				<li>
+					<a href="#">NFT 운영</a>
+					<ul>
+						<li><a href="#">NFT 전송</a></li>
+						<li><a href="#">Token 전송</a></li>
+						<li><a href="#">Coin 전송</a></li>
+						<li><a href="#">Snap Shot</a></li>
+						<li>Lock Up (Coming Soon)</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">MY 내역</a>
+					<ul>
+						<li><a href="#">캠페인 생성 내역</a></li>
+						<li><a href="#">NFT 발행내역</a></li>
+						<li><a href="#">이벤트 사이트 생성 내역</a></li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<article id="container">
+			<header id="header">
+				<div class="boxTool">
+					<div class="info">
+						<div class="name">홍길동 님 환영합니다.</div>
+						<button type="button" class="btnProfile">My Profile</button>
+					</div>
+					<button type="button" class="btnLogin">Logout</button>
+          <div class="boxMypage">
+            <div class="name">홍길동 님</div>
+            <div class="type">기업고객</div>
+            <ul>
+              <li><a href="#">슬롯 구매하기</a></li>
+              <li><a href="#">결제 관리</a></li>
+              <li><a href="#">회원정보 수정</a></li>
+              <li><a href="#">문의사항</a></li>
+            </ul>
+          </div>
+				</div>
+			</header>
+			<div class="contents">
+				<div class="contTop">
+					<h2>NFT 발행</h2>
+					<div class="subject">NFT를 발행해보세요!</div>
+				</div>
+        <div class="boxTabGroup">
+          <div class="boxTab">
+            <a href="#" class="active" data-tab="tab1">대량 발행/전송(직접)</a>
+            <a href="#" data-tab="tab2">소량 발행/전송(직접)</a>
+            <a href="#" data-tab="tab3">고객 직접 발행</a>
+          </div>
+          <div id="tab1" class="boxTabCont boxGray active">
+            <div class="inputGroup">
+              <div class="row">
+                <div class="titleArea">
+                  <h4>캠페인(컨트랙트) 주소 <span class="imp">*</span></h4>
+                </div>
+                <div class="selectCampaign">
+                  <div class="selectGroup">
+                    <div class="selected">캠페인(컨트랙트)을 선택해주세요.</div>
+                    <ul>
+                      <li>Grae : 0x2aosi383h393h38938274h9uskdc93u2929829haa282937ss</li>
+                      <li>Grae : 0x2aosi383h393h38938274h9uskdc93u2929829haa282937ss</li>
+                      <li>Grae : 0x2aosi383h393h38938274h9uskdc93u2929829haa282937ss</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>NFT를 받을 지갑주소 <span class="imp">*</span></h4>
+                </div>
+                <input type="text" placeholder="컨트랙트 선택시 자동 입력" readonly="readonly" />
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>Image Link <span class="imp">*</span></h4>
+                  <div class="pos">
+                    <a href="#" class="link">예시 보기</a>
+                    <div class="boxGuide size--s">
+                      <a href="#" class="linkGuide">예시 보기</a>
+                      <span class="guideBubble">대량 발행 할 NFT 이미지가 모두 업로드 된<br />URL을 입력해주세요.</span>
+                    </div>
+                  </div>
+                </div>
+                <input type="text" placeholder="이미지가 업로드 된 URL을 입력해주세요." />
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>Jason File Link <span class="imp">*</span></h4>
+                  <div class="pos">
+                    <a href="#" class="link">예시 보기</a>
+                    <div class="boxGuide size--s">
+                      <a href="#" class="linkGuide">예시 보기</a>
+                      <span class="guideBubble">발행할 NFT의 JASON 파일이 업로드 된<br />URL을 입력해주세요.</span>
+                    </div>
+                  </div>
+                </div>
+                <input type="text" placeholder="JASON 파일이 업로드 된 URL을 입력해주세요." />
+              </div>
+              <div class="row">
+                <div class="btnArea ta-c">
+                  <button type="button" class="btn btn--large">NFT 발행하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab2" class="boxTabCont boxGray">
+            <div class="inputGroup">
+              <div class="row">
+                <div class="titleArea">
+                  <h4>캠페인(컨트랙트) 주소 <span class="imp">*</span></h4>
+                </div>
+                <div class="selectCampaign">
+                  <div class="selectGroup">
+                    <div class="selected">캠페인(컨트랙트)을 선택해주세요.</div>
+                    <ul>
+                      <li>Grae : 0x2aosi383h393h38938274h9uskdc93u2929829haa282937ss</li>
+                      <li>Grae : 0x2aosi383h393h38938274h9uskdc93u2929829haa282937ss</li>
+                      <li>Grae : 0x2aosi383h393h38938274h9uskdc93u2929829haa282937ss</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>NFT를 받을 지갑주소 <span class="imp">*</span></h4>
+                </div>
+                <input type="text" placeholder="컨트랙트 선택시 자동 입력" readonly="readonly" />
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>Image / Video File Upload <span class="imp">*</span></h4>
+                </div>
+                <div class="fileArea">
+                  <a href="#"><span>드래그 또는 클릭하여 파일 업로드</span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>NFT name <span class="imp">*</span></h4>
+                </div>
+                <input type="text" placeholder="NFT의 이름을 입력해주세요." />
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>NFT 설명 <span class="imp">*</span></h4>
+                </div>
+                <input type="text" placeholder="NFT의 설명을 입력해주세요." />
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>NFT 속성(레알리티) <span class="imp">*</span></h4>
+                </div>
+                <div class="inputAttr">
+                  <div class="item">
+                    <input type="text" placeholder="속성 이름" class="name" />
+                    <input type="text" placeholder="속성 값" class="attr" />
+                    <button type="button" class="btnPlus">추가 +</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row is--col">
+                <div class="titleArea">
+                  <h4>Token ID <span class="imp">*</span></h4>
+                </div>
+                <div class="inputToken">
+                  <input type="radio" name="chk_token" id="chk_token1" />
+                  <label for="chk_token1">자동부여</label>
+                  <input type="radio" name="chk_token" id="chk_token2" />
+                  <label for="chk_token2">지정</label>
+                  <input type="text" placeholder="토큰 아이디를 입력해주세요." />
+                </div>
+              </div>
+              <div class="row">
+                <div class="btnArea ta-c">
+                  <button type="button" class="btn btn--large">NFT 발행하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab3" class="boxTabCont boxGray">
+            <div class="inputGroup">
+              <div class="row">
+                <div class="titleArea">
+                  <h4>캠페인(컨트랙트) 주소 <span class="imp">*</span></h4>
+                </div>
+                <div class="selectCampaign">
+                  <div class="selectGroup">
+                    <div class="selected">캠페인(컨트랙트)을 선택해주세요.</div>
+                    <ul>
+                      <li>Grae : 0x2aosi383h393h38938274h9uskdc93u2929829haa282937ss</li>
+                      <li>Grae : 0x2aosi383h393h38938274h9uskdc93u2929829haa282937ss</li>
+                      <li>Grae : 0x2aosi383h393h38938274h9uskdc93u2929829haa282937ss</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>대표이미지(1000px X 1000px / png,jpg,mp4) <span class="imp">*</span></h4>
+                </div>
+                <div class="fileArea">
+                  <a href="#"><span>드래그 또는 클릭하여 파일 업로드</span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>상세이미지(1000px X 1000px / png,jpg,mp4) <span class="imp">*</span></h4>
+                </div>
+                <div class="fileArea">
+                  <a href="#"><span>드래그 또는 클릭하여 파일 업로드</span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>Image Link <span class="imp">*</span></h4>
+                  <div class="pos">
+                    <a href="#" class="link">예시 보기</a>
+                    <div class="boxGuide">
+                      <a href="#" class="linkGuide">예시 보기</a>
+                      <span class="guideBubble">대량 발행 할 NFT 이미지가 모두 업로드 된<br />URL을 입력해주세요.</span>
+                    </div>
+                  </div>
+                </div>
+                <input type="text" placeholder="이미지가 업로드 된 URL을 입력해주세요." />
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>Jason File Link <span class="imp">*</span></h4>
+                  <div class="pos">
+                    <a href="#" class="link">예시 보기</a>
+                    <div class="boxGuide">
+                      <a href="#" class="linkGuide">예시 보기</a>
+                      <span class="guideBubble">발행할 NFT의 JASON 파일이 업로드 된<br />URL을 입력해주세요.</span>
+                    </div>
+                  </div>
+                </div>
+                <input type="text" placeholder="JASON 파일이 업로드 된 URL을 입력해주세요." />
+              </div>
+              <div class="row">
+                <div class="titleArea">
+                  <h4>발행가능한 NFT 총수량 <span class="imp">*</span></h4>
+                </div>
+                <input type="text" placeholder="수량입력" class="size--half" />
+              </div>              
+              <div class="row">
+                <div class="btnArea ta-c">
+                  <button type="button" class="btn btn--large">설정 완료</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</article>
+	</section>
+</html>

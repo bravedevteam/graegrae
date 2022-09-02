@@ -42,6 +42,15 @@ $(function(){
     net_select.children(".selected").html('').text(net_name);
   });
 
+  // 내 정보
+  $(".btnProfile").click(function(){
+    if($(".boxMypage").css("display") == "none"){
+      $(".boxMypage").fadeIn(300);
+    }else{
+      $(".boxMypage").fadeOut(300);      
+    }
+  });
+
   // 달력
   if($(".datapicker").length){
     $(".datepicker").datepicker();
@@ -54,9 +63,23 @@ $(function(){
     });
   }
 
+  //탭
+  $(".boxTab a").click(function(){
+    var target = $(this).attr("data-tab");
+    var _parents = $(this).parents(".boxTabGroup");
+    if(!$(this).hasClass("active")){
+      $(this).addClass("active").siblings().removeClass("active");
+      _parents.children(".boxTabCont").removeClass("active");
+      $("#"+target).addClass("active");
+    }
+  });
+
   // 팝업
   $(".open--popup").click(function(){
     var target = $(this).attr("data-pop");
+    if($(".popBasic").css("display") == "block"){
+      $(".popBasic").hide();
+    }
     $("#"+target).show();
     $("#dim").show();
   });
