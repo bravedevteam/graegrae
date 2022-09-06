@@ -37,11 +37,11 @@
             </div>
             <div class="row">
               <div class="btnArea">
-                <a href="#" class="link">회원가입</a>
-                <button type="button" class="btn">Log in</button>
+                <a href="#" class="link">회원가입</a><br />
+                <button type="button" class="btn btn--large2">Log in</button>
                 <div class="find">
-                  <a href="#">ID 찾기</a>
-                  <a href="#">PW 찾기</a>
+                  <a href="#" class="open--popup" data-pop="popFindID">ID 찾기</a>
+                  <a href="#" class="open--popup" data-pop="popFindPW">PW 찾기</a>
                 </div>
               </div>
             </div>
@@ -55,9 +55,94 @@
 		</article>
 	</section>
 
-	<script type="text/javascript">
-		$(function(){
-		
-		});
-	</script>
+  <!-- 팝업 :: 아이디 찾기 -->
+	<div id="popFindID" class="popBasic type--qna">
+		<div class="popInner">
+			<div class="titleArea">
+				<h3>아이디 찾기</h3>
+				<p>회원가입 시 등록한 이름과 이메일 주소를 입력해주세요.<br />초기화 비밀번호는 이메일을 통해 확인하실 수 있습니다.</p>
+			</div>
+			<div class="inputGroup">
+				<div class="row">
+					<div class="titleArea">
+						<h5>이름</h5>
+					</div>
+					<div class="cont">
+						<input type="text" placeholder="이름을 입력해주세요." />
+					</div>
+				</div>
+				<div class="row">
+					<div class="titleArea">
+						<h5>E-mail</h5>
+					</div>
+					<div class="cont">
+						<input type="text" placeholder="이메일을 입력해주세요." />
+					</div>
+				</div>
+			</div>
+			<div class="btnArea ta-c">
+				<button type="button" class="btn btn--large2 open--popup" data-pop="popFindID_complete">아이디 찾기</button>
+			</div>
+			<button type="button" class="btnClose close--popup">닫기</button>
+		</div>
+	</div>
+
+  <!-- 팝업 :: 아이디 발송 완료 -->
+	<div id="popFindID_complete" class="popBasic type--complete">
+		<div class="popInner">
+			<div class="cont">
+				이메일 주소로 아이디가 발송되었습니다.
+			</div>
+			<div class="btnArea">
+				<button type="button" class="btn btn--large2 close--popup">확인</button>
+			</div>
+      <button type="button" class="btnClose close--popup">닫기</button>
+		</div>
+	</div>
+
+  <!-- 팝업 :: 비밀번호 찾기 -->
+	<div id="popFindPW" class="popBasic type--qna">
+		<div class="popInner">
+			<div class="titleArea">
+				<h3>비밀번호 찾기</h3>
+				<p>회원가입 시 등록한 아이디와 이메일 주소를 입력해 주세요.<br />초기화 비밀번호는 이메일을 통해 확인하실 수 있습니다.</p>
+			</div>
+			<div class="inputGroup">
+				<div class="row">
+					<div class="titleArea">
+						<h5>ID</h5>
+					</div>
+					<div class="cont">
+						<input type="text" placeholder="아이디를 입력해주세요." />
+					</div>
+				</div>
+				<div class="row">
+					<div class="titleArea">
+						<h5>E-mail</h5>
+					</div>
+					<div class="cont">
+						<input type="text" placeholder="이메일을 입력해주세요." />
+					</div>
+				</div>
+			</div>
+			<div class="btnArea ta-c">
+				<button type="button" class="btn btn--large2 open--popup" data-pop="popFindPW_complete">비밀번호 찾기</button>
+			</div>
+			<button type="button" class="btnClose close--popup">닫기</button>
+		</div>
+	</div>
+
+  <!-- 팝업 :: 비밀번호 발송 완료 -->
+	<div id="popFindPW_complete" class="popBasic type--complete">
+		<div class="popInner">
+			<div class="cont">
+				이메일 주소로 초기화 비밀번호가 발송되었습니다.<br />로그인하신 후에 비밀번호를 변경해 주세요.
+			</div>
+			<div class="btnArea">
+				<button type="button" class="btn btn--large2 close--popup">확인</button>
+			</div>
+      <button type="button" class="btnClose close--popup">닫기</button>
+		</div>
+	</div>
+	<div id="dim"></div>
 </html>

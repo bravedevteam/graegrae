@@ -77,9 +77,7 @@ $(function(){
   // 팝업
   $(".open--popup").click(function(){
     var target = $(this).attr("data-pop");
-    if($(".popBasic").css("display") == "block"){
-      $(".popBasic").hide();
-    }
+    $(".popBasic").hide();
     $("#"+target).show();
     $("#dim").show();
   });

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>GRAEGRAE</title>
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+  <script src="js/common.js"></script>
+</head>
+
+<body>
+	<section id="wrap" class="page--join">
+		<article id="container">
+			<div class="boxJoin">
+				<div class="titleArea">
+					<h4>회원가입</h4>
+				</div>
+        <div class="boxTabGroup">
+          <div class="boxTab">
+            <a href="#" class="active" data-tab="join1">개인 회원가입</a>
+            <a href="#" data-tab="join2">기업 회원가입</a>
+          </div>
+          <div id="join1" class="boxTabCont active">
+            <div class="inputGroup">
+							<div class="row">
+								<div class="titleArea">
+									<h5>ID <span class="imp">*</span></h5>
+								</div>
+								<div class="row--pos">
+									<input type="text" class="chk--pilsu" placeholder="아이디를 입력해주세요." />
+									<button type="button" class="btn btn--blue">중복체크</button>
+								</div>
+								<p class="ps type--a">*필수 입력사항입니다.</p>
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>이름 <span class="imp">*</span></h5>
+								</div>
+								<input type="text" placeholder="입력해주세요." />
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>비밀번호 <span class="imp">*</span></h5>
+								</div>
+								<input type="password" placeholder="대문자, 숫자, 특수문자를 조합하여 입력해주세요." />
+								<p class="ps type--b">영문+숫자+특수문자 중 2가지 이상 조합 최소 8~12자리 이내</p>
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>비밀번호 확인 <span class="imp">*</span></h5>
+								</div>
+								<input type="password" placeholder="입력해주세요." />
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>생년월일 <span class="imp">*</span></h5>
+								</div>
+								<input type="text" placeholder="ex) 19990101 / 8자리" />
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>E-mail <span class="imp">*</span></h5>
+								</div>
+								<div class="row--pos">
+									<input type="text" placeholder="이메일을 입력해주세요." />
+									<button type="button" class="btn btn--blue">인증메일 발송</button>
+									<span class="cert">메일 인증 전</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>휴대폰 번호 <span class="imp">*</span></h5>
+								</div>
+								<input type="text" placeholder="휴대폰 번호를 입력해주세요." />
+							</div>
+						</div>
+          </div>
+          <div id="join2" class="boxTabCont">
+            <div class="inputGroup">
+							<div class="row">
+								<div class="titleArea">
+									<h5>ID <span class="imp">*</span></h5>
+								</div>
+								<div class="row--pos">
+									<input type="text" class="chk--pilsu" placeholder="아이디를 입력해주세요." value="GRAEGRAE" />
+									<button type="button" class="btn btn--blue">중복체크</button>
+								</div>
+								<p class="ps type--a">*필수 입력사항입니다.</p>
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>비밀번호 <span class="imp">*</span></h5>
+								</div>
+								<input type="password" placeholder="대문자, 숫자, 특수문자를 조합하여 입력해주세요." value="1234512345" />
+								<p class="ps type--b">영문+숫자+특수문자 중 2가지 이상 조합 최소 8~12자리 이내</p>
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>비밀번호 확인 <span class="imp">*</span></h5>
+								</div>
+								<input type="password" placeholder="입력해주세요." />
+							</div>
+							<div class="row--title">기업 담당자</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>담당자 이름 <span class="imp">*</span></h5>
+								</div>
+								<input type="text" placeholder="이름을 입력해주세요." value="홍길동" />
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>담당자 E-mail <span class="imp">*</span></h5>
+								</div>
+								<div class="row--pos">
+									<input type="text" placeholder="이메일을 입력해주세요." />
+									<button type="button" class="btn btn--blue">인증메일 발송</button>
+									<span class="cert">메일 인증 완료</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>담당자 휴대폰 번호 <span class="imp">*</span></h5>
+								</div>
+								<input type="text" placeholder="휴대폰 번호를 입력해주세요." />
+							</div>
+							<div class="row--title">회사정보</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>회사 명 <span class="imp">*</span></h5>
+								</div>
+								<input type="text" placeholder="회사 명을 입력해주세요." />
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>사업자등록번호 <span class="imp">*</span></h5>
+								</div>
+								<input type="text" placeholder="사업자등록번호를 -없이 입력해주세요." />
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>대표자 성명 <span class="imp">*</span></h5>
+								</div>
+								<input type="text" placeholder="대표자 성명을 입력해주세요." />
+							</div>
+							<div class="row with--address">
+								<div class="titleArea">
+									<h5>회사 주소 <span class="imp">*</span></h5>
+								</div>
+								<div class="row--pos">
+									<input type="text" placeholder="우편번호 검색" />
+									<button type="button" class="btn btn--blue">검색</button>
+								</div>
+								<input type="text" placeholder="" />
+								<input type="text" placeholder="세부 주소를 입력해주세요." />
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>연락처 <span class="imp">*</span></h5>
+								</div>
+								<input type="text" placeholder="회사 연락처를 입력해주세요." />
+							</div>
+							<div class="row">
+								<div class="titleArea">
+									<h5>홈페이지 URL <span class="imp">*</span></h5>
+								</div>
+								<input type="text" placeholder="회사 홈페이지 URL을 입력해주세요." />
+							</div>
+						</div>
+          </div>
+					<div class="formAgree">
+						<div class="allAgree">
+							<input type="checkbox" id="chk_all" />
+							<label for="chk_all">전체동의</label>
+						</div>
+						<div class="chkAgree">
+							<div class="item">
+								<input type="checkbox" id="chk_1" name="chk_agree" />
+								<label for="chk_1">[필수] GRAEGRAE 서비스이용약관에 동의합니다.</label>
+								<a href="#" class="link">보기</a>
+							</div>
+							<div class="item">
+								<input type="checkbox" id="chk_2" name="chk_agree" />
+								<label for="chk_2">[필수] 개인정보 수집 및 이용에 동의합니다.</label>
+								<a href="#" class="link">보기</a>
+							</div>
+							<div class="item">
+								<input type="checkbox" id="chk_3" name="chk_agree" />
+								<label for="chk_3">[필수] 개인정보처리방침 약관에 동의합니다.</label>
+								<a href="#" class="link">보기</a>
+							</div>
+							<div class="item">
+								<input type="checkbox" id="chk_4" name="chk_agree" />
+								<label for="chk_4">[선택] 마케팅 정보 활용에 동의합니다.</label>
+								<a href="#" class="link">보기</a>
+							</div>
+						</div>
+					</div>
+					<div class="btnArea ta-c mt60">
+						<button type="button" class="btn btn--large2 open--popup" data-pop="popJoinComplete">회원가입</button>
+					</div>
+        </div>
+      </div>
+		</article>
+	</section>
+
+	<!-- 팝업 :: 회원가입 완료 -->
+	<div id="popJoinComplete" class="popBasic type--complete">
+		<div class="popInner">
+			<div class="cont icon--complete">
+				GRAEGRAE<br />회원가입이 완료되었습니다.
+			</div>
+			<div class="btnArea">
+				<button type="button" class="btn btn--large2 close--popup">확인</button>
+			</div>
+		</div>
+	</div>
+	<div id="dim"></div>
+
+	<script type="text/javascript">
+		$(function(){
+			$("#chk_all").click(function() {
+				if($("#chk_all").is(":checked")) $("input[name=chk_agree]").prop("checked", true);
+				else $("input[name=chk_agree]").prop("checked", false);
+			});
+
+			$("input[name=chk_agree]").click(function() {
+				var total = $("input[name=chk_agree]").length;
+				var checked = $("input[name=chk_agree]:checked").length;
+
+				if(total != checked) $("#chk_all").prop("checked", false);
+				else $("#chk_all").prop("checked", true); 
+			});
+		});
+	</script>
+</html>
