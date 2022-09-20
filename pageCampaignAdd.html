@@ -34,7 +34,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="./pageEventAdd.html">이벤트 사이트 만들기</a>
+					<a href="./pageEventAdd.html">민팅 사이트 만들기</a>
 				</li>
 				<li>
 					<a href="./pageNFT_send.html">NFT 운영</a>
@@ -47,11 +47,11 @@
 					</ul>
 				</li>
 				<li>
-					<a href="./pageCampaignHistory.html">MY 내역</a>
+					<a href="./pageCampaignHistory.html">활동 내역</a>
 					<ul>
 						<li><a href="./pageCampaignHistory.html">캠페인 생성 내역</a></li>
 						<li><a href="./pagePublishHistory.html">NFT 발행내역</a></li>
-						<li><a href="./pageEventHistory.html">이벤트 사이트 생성 내역</a></li>
+						<li><a href="./pageEventHistory.html">민팅 사이트 생성 내역</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -134,7 +134,7 @@
 								생성 시 메인넷 코인이 필요하며 지갑에 코인이 부족할 경우 캠페인(컨트랙트) 생성이 취소될 수 있습니다.
 							</p>
 							<div class="btnArea ta-c">
-								<button type="button" class="btn btn--large">캠페인 생성하기</button>
+								<button type="button" class="btn btn--large open--popup" data-pop="popCampaignAdd">캠페인 생성하기</button>
 							</div>
 						</div>
 					</div>
@@ -413,6 +413,69 @@
 			</div>
 		</article>
 	</section>
+
+	<!-- 팝업 :: 캠페인 생성 -->
+	<div id="popCampaignAdd" class="popBasic type--campaign">
+		<div class="popInner">
+			<div class="titleArea">
+				<h3>캠페인을 생성에 필요한 지갑 주소를<br />다시한번 확인해 주세요!</h3>
+			</div>
+			<div class="cont">
+				<div class="boxGray">
+					<div class="title">등록한 지갑주소</div>
+					<div class="address">0x23072A209e8519e515D11b0E49e15770F9c812Df</div>
+				</div>
+				<p>(캠페인 생성 시 가상자산 지갑이 연결되어있어야 합니다.)</p>
+				<div class="inputGroup">
+					<div class="titleArea">
+						<h4>프라이빗 키 입력 <span class="imp">*</span></h4>
+					</div>
+					<input type="text" class="chk--pilsu" placeholder="프라이빗 키를 입력해주세요." />
+				</div>
+				<p class="f-small">
+					캠페인 생성 시 등록된 지갑(마더지갑)은 변경할 수 없습니다.<br />
+					한번 생성한 캠페인(컨트랙트)의 기본 정보는 변경할 수 없습니다.<br />
+					생성 시 메인넷 코인이 필요하며 지갑에 코인이 부족할 경우 캠페인 생성이 취소될 수 있습니다.<br />
+					캠페인 생성에 동의하신다면 생성하기 버튼을 클릭해주세요.
+				</p>
+			</div>
+			<div class="btnArea ta-c">
+				<button type="button" class="btn btn--large2 open--popup" data-pop="popCampaignWallet">캠페인 생성하기</button>
+				<!-- 팝업 호출 시
+					지갑 주소 등록 팝업 _ popCampaignWallet
+					이용권 부족 팝업 _ popCampaignTicket
+				-->
+			</div>
+			<button type="button" class="btnClose close--popup">닫기</button>
+		</div>
+	</div>
+
+	<!-- 팝업 :: 지갑 주소 등록 -->
+  <div id="popCampaignWallet" class="popBasic type--complete">
+		<div class="popInner">
+			<div class="cont icon--caution">
+				캠페인 생성 시 필요한 지갑 주소를 등록해주세요.
+				<p>(캠페인 생성 시 가상자산 지갑이 연결되어있어야 합니다.)</p>
+			</div>
+			<div class="btnArea">
+				<button type="button" class="btn btn--large2 close--popup">확인</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- 팝업 :: 이용권 부족 -->
+  <div id="popCampaignTicket" class="popBasic type--complete">
+		<div class="popInner">
+			<div class="cont icon--caution">
+				캠페인 생성 시 필요한 이용권이 부족합니다.
+				<p>(캠페인 생성 시 가상자산 지갑이 연결되어있어야 합니다.)</p>
+			</div>
+			<div class="btnArea">
+				<button type="button" class="btn btn--large2 close--popup">확인</button>
+			</div>
+		</div>
+	</div>
+	<div id="dim"></div>
 
 	<script type="text/javascript">
 		$(function(){
