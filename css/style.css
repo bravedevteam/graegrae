@@ -130,6 +130,10 @@ p.ps.type--b { padding:1px 3px !important; color:rgba(0,0,0,.3) !important; font
 #wrap.page--join:before { display:none; }
 #wrap.page--join #container { min-height:100%; padding:80px 0; margin:0; }
 
+#wrap.page--invite { padding:122px 50px; background-image: linear-gradient(to bottom, #004ee2, #0040ba); }
+#wrap.page--invite:before { display:none; }
+#wrap.page--invite #container { padding:0; margin:0; }
+
 .boxLogin { width:500px; margin:0 auto; padding-bottom:120px; position:relative; z-index:10; }
 .boxLogin .topArea { margin-bottom:45px; text-align:center; }
 .boxLogin .topArea h1 { width:160px; margin:0 auto; }
@@ -543,6 +547,21 @@ input.timepicker { background:url('../images/iconCalendar.png') right center no-
 .boxQnaView { height:284px; padding:20px; border:1px solid #ddd; background:#fff; }
 .boxQnaView .title { padding-bottom:15px; margin-bottom:15px; border-bottom:1px solid #000; }
 .boxQnaView.is--answer { height:162px; }
+
+.boxInvitePage { text-align:center; }
+.boxInvitePage .topArea { padding-bottom:10px; }
+.boxInvitePage .topArea h1 { width:160px; margin:0 auto; }
+.boxInvitePage .topArea p { margin:6px 0; font-size:14px; color:#fff; }
+.boxInvitePage .contArea { margin-top:20px; }
+.boxInvitePage .contArea p { margin-bottom:32px; font-size:16px; font-weight:700; color:#4afec7 }
+.boxInvitePage .contArea p.desc { font-size:14px; color:#fff; font-weight:400; }
+.boxInvitePage .contArea p.desc+.btnArea { margin-top:45px; }
+.boxInvitePage .contArea .btnArea { margin-bottom:46px; }
+.boxInvitePage .contArea .btnArea a { width:228px; height:220px; padding-top:133px; display:inline-block; border-radius:19px; background-position:center 60px; background-repeat:no-repeat; vertical-align:middle; font-size:16px; color:#000; font-weight:700; text-align:center; box-shadow: 0 3px 18px 0 rgba(40, 46, 54, 0.16); }
+.boxInvitePage .contArea .btnArea a+a { margin-left:28px; }
+.boxInvitePage .contArea .btnArea a.btnLogin { background-image:url('../images/iconInviteLogin.png'); background-color:#4afec7; }
+.boxInvitePage .contArea .btnArea a.btnJoin { background-image:url('../images/iconInviteJoin.png'); background-color:#fff; }
+.boxInvitePage .contArea .btnArea a.btnMeet { width:350px; height:108px; padding:0; line-height:108px; background-color:#4afec7; }
 
 .popBasic { position:fixed; left:50%; top:50%; display:none; padding:53px 75px 63px; box-shadow: 0 8px 42px 0 rgba(0, 0, 0, 0.38); background:#fff; border-radius:20px; transform:translate(-50%, -50%); z-index:15; }
 .popBasic .titleArea { padding:0; text-align:center; }
