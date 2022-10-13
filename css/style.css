@@ -311,6 +311,10 @@ p.ps.type--b { padding:1px 3px !important; color:rgba(0,0,0,.3) !important; font
 .inputGroup .row.is--col .titleArea { margin-right:35px; }
 .inputGroup .row.is--col .inputToken { flex:1; }
 
+.walletArea { overflow:hidden; }
+.walletArea .btn { width:163px; height:52px; float:left; }
+.walletArea .key { margin-left:178px; line-height:52px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
 input.inputPrivate { height:66px; color:#004ee2; font-size:18px; font-family:"Roboto"; }
 input.inputPrivate::placeholder { font-size:14px; font-family:"Noto Sans KR"; }
 input.inputPrivate.size--small { height:52px; }
