@@ -88,8 +88,8 @@
 				</div>
         <div class="boxTabGroup">
           <div class="boxTab">
-            <a href="#" class="active" data-tab="tab1">대량 발행/전송(직접)</a>
-            <a href="#" data-tab="tab2">소량 발행/전송(직접)</a>
+            <a href="#" class="active" data-tab="tab1">대량 발행</a>
+            <a href="#" data-tab="tab2">소량 발행</a>
           </div>
           <div id="tab1" class="boxTabCont boxGray active">
             <div class="inputGroup">
@@ -116,32 +116,33 @@
               </div>
               <div class="row">
                 <div class="titleArea">
-                  <h4>Image Link <span class="imp">*</span></h4>
-                  <div class="pos">
-                    <a href="#" class="link">예시 보기</a>
-                    <div class="boxGuide size--s">
-                      <a href="#" class="linkGuide">예시 보기</a>
-                      <span class="guideBubble">대량 발행 할 NFT 이미지가 모두 업로드 된<br />URL을 입력해주세요.</span>
-                    </div>
-                  </div>
+                  <h4>발행 수량 <span class="imp">*</span></h4>
                 </div>
-                <input type="text" placeholder="이미지가 업로드 된 URL을 입력해주세요." />
+                <div class="inputPublish">
+                  <input type="text" placeholder="최대 발행 수량을 입력해주세요." />
+                  <p>전체10,000개 중 <span>5,000</span>개 발행가능</p>
+                </div>
               </div>
               <div class="row">
                 <div class="titleArea">
-                  <h4>Jason File Link <span class="imp">*</span></h4>
-                  <div class="pos">
-                    <a href="#" class="link">예시 보기</a>
-                    <div class="boxGuide size--s">
-                      <a href="#" class="linkGuide">예시 보기</a>
-                      <span class="guideBubble">발행할 NFT의 JASON 파일이 업로드 된<br />URL을 입력해주세요.</span>
-                    </div>
-                  </div>
+                  <h4>발행 이미지 <span class="imp">*</span></h4>
                 </div>
-                <input type="text" placeholder="JASON 파일이 업로드 된 URL을 입력해주세요." />
+                <div class="inputMake is--ready">
+                  <p>준비된 이미지가 없습니다. NFT대량 합성기를 통해 이미지를 준비해 주세요!</p>
+                  <button type="button" class="btn">이미지 만들기</button>
+                </div>
+
+                <!-- 만들기 이후 -->
+                <div class="inputMake">
+                  <p>"GRAEGRAE" NFT 합성이미지</p>
+                  <button type="button" class="btn">이미지 보기</button>
+                </div>
               </div>
               <div class="row">
                 <div class="btnArea ta-c">
+                  <button type="button" class="btn btn--large dis">NFT 발행하기</button>
+
+                  <!-- 만들기 이후 -->
                   <button type="button" class="btn btn--large">NFT 발행하기</button>
                 </div>
               </div>

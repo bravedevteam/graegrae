@@ -80,10 +80,12 @@ $(function(){
     $(".popBasic").hide();
     $("#"+target).show();
     $("#dim").show();
+    $("body").css("overflow", "hidden");
   });
 
   $(".close--popup").click(function(){
     $(this).parents(".popBasic").hide();
+    $("body").css("overflow", "auto");
     $("#dim").hide();
   });
 
